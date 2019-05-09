@@ -53,13 +53,13 @@
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script><!-- GSAP用プラグインの読み込み -->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
   <script>
-    
+    var controller = new ScrollMagic.Controller();
     window.onload = function(){
       
       var contentsHeight = document.getElementById('contents').clientHeight; 
       
       console.log(contentsHeight);
-      var controller = new ScrollMagic.Controller();
+      
       var tween = TweenMax.fromTo("#contentsHeader", 1, {y: 0}, {y: '100%', ease: Linear.easeNone});
       var scene = new ScrollMagic.Scene({triggerElement: ".contents", duration: contentsHeight})
                   .setTween(tween)
