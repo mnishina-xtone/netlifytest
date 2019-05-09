@@ -54,7 +54,7 @@
       console.log(contentsHeight);
   
       var controller = new ScrollMagic.Controller();
-      var tween = TweenMax.fromTo("#contentsHeader", 1, {y: 0}, {y: 6000, ease: Linear.easeNone});
+      var tween = TweenMax.fromTo("#contentsHeader", 1, {y: 0}, {y: 1500, ease: Linear.easeNone});
       var scene = new ScrollMagic.Scene({triggerElement: "#contents", duration: contentsHeight})
                   .setTween(tween)
                   .addIndicators() // add indicators (requires plugin)
