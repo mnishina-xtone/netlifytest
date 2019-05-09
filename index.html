@@ -7,6 +7,35 @@
   <title>DocumentDocumentDocument</title>
 
   <script src="https://cdn.jsdelivr.net/combine/npm/gsap@2,npm/gsap@2/CSSPlugin.min.js,npm/gsap@2/ScrollToPlugin.min.js,npm/gsap@2/EasePack.min.js,npm/animejs@3,npm/scrollmagic@2,npm/preloadjs@1"></script>
+  <style>
+    .hyoushi {
+      min-height: 90vh;
+    }
+    .contents {
+      max-width: 620px;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 10em 0;
+      position: relative;
+    }
+    .contentsHeader {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 2;
+      width: 100%;
+      font-size: 100px;
+      font-weight: bold;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      border: 1px solid red;
+    }
+    .contentsBody {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
 </head>
 <body>
   <div class="hyoushi"></div>
