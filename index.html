@@ -56,11 +56,11 @@
   <script>
     window.onload = function(){
       var contentsHeight = document.getElementById('contents').clientHeight;
-      var speed = contentsHeight * 0.50;
+      var speed = contentsHeight * 0.1;
       console.log(contentsHeight);
   
       var controller = new ScrollMagic.Controller();
-      var tween = TweenMax.fromTo("#contentsHeader", 100, {y: 0}, {y: speed, ease: Linear.easeOut});
+      var tween = TweenMax.fromTo("#contentsHeader", 1, {y: 0}, {y: speed, ease: Linear.easeOut});
       var scene = new ScrollMagic.Scene({triggerElement: "#contents", duration: contentsHeight})
                   .setClassToggle("#contentsHeader", "active") // add class toggle
                   .setTween(tween)
